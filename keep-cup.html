@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DECO3200 - Amalie Judd</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Hey, add a favicon before you finish -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="video-bg">
+        <video autoplay muted class="video" id="video" onended="showElement()">
+            <source src="./vid/keep-cup-vid.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="center">
+        <div class="item-circle keep-cup-circle-bg" id="fade-out">
+        </div>
+        <div onclick="muteVideo()">MUTE</div>
+
+        <div class="MAC-box hidden-content" id="hidden">
+            <div class="item-circle keep-cup-circle-bg">
+            </div>
+            <h2>Use a keep cup</h2>
+            <p>By choosing to use a keep cup, you have impacted those around you to do the same.
+
+                Collectively, we have reduced carbon emissions and plastic waste.
+
+                This future is within our reach.</p>
+            <a href="./resources.html">How can I make this happen?</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
