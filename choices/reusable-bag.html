@@ -14,9 +14,9 @@
 
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Hey future amalie, add a favicon before you finish - Past Amalie -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
     <!-- Change this fugs font -->
@@ -24,30 +24,27 @@
 
 <body class="">
     <div class="video-bg">
-        <video autoplay muted class="video" id="video" onended="showElement()">
-            <source src="./vid/keep-cup-vid.mp4" type="video/mp4">
+        <video autoplay muted class="video" id="video" onended="showElement()" controls>
+            <source src="../vid/reusable-bag.mp4" type="video/mp4">
         </video>
     </div>
 
     <div class="center">
-        <div class="item-circle keep-cup-circle-bg" id="fade-out">
+        <a onclick="unmuteVideo()" class="unmute">UNMUTE</a>
+        <div class="item-circle reusable-bag-bg" id="fade-out">
         </div>
-        <div onclick="muteVideo()">MUTE</div>
 
         <div class="MAC-box hidden-content" id="hidden">
-            <div class="item-circle keep-cup-circle-bg">
+            <div class="item-circle reusable-bag-bg">
             </div>
-            <h2>Use a keep cup</h2>
-            <p>By choosing to use a keep cup, you have impacted those around you to do the same.
-
-                Collectively, we have reduced carbon emissions and plastic waste.
-
-                This future is within our reach.</p>
-            <a href="./resources.html">How can I make this happen?</a>
+            <h2>reusable-bag</h2>
+            <p>Baajajajose to us already.</p>
+            <a class="a-button" href="../resources.html">How can I make this happen?</a>
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

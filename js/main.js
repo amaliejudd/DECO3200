@@ -2,9 +2,17 @@ function fadeIn() {
     document.body.classList.add("fade-in")
 }
 
-function muteVideo() {
+function unmuteVideo() {
     var vid = document.getElementById("video");
-    vid.muted = true;
+    vid.muted = false;
+}
+
+function playPause() {
+    var vid = document.getElementById("video");
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
 }
 
 

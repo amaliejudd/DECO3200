@@ -18,17 +18,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
-    <!-- Change this fugs font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="MAC-container">
 
     <div class="MAC-grid">
-        <a href="./keep-cup.html" class="MAC-keep-cup">
+        <a href="./choices/keep-cup.html" class="MAC-item">
             <div class="MAC-box">
                 <div class="item-circle keep-cup-circle-bg">
-
                 </div>
                 <h2>Use a keep cup</h2>
                 <p class="hidden-content">Using a keep cup reduces waste and has a positive impact on the environment
@@ -37,13 +38,11 @@
                     By choosing to reduce your waste, you are lowering carbon emissions from waste management and
                     limiting plastic pollution.</p>
             </div>
-
         </a>
 
-        <a href="./disposable-cup.html" class="MAC-disposable-cup">
+        <a href="./choices/disposable-cup.html" class="MAC-item">
             <div class="MAC-box">
                 <div class="item-circle disposable-cup-circle-bg">
-
                 </div>
                 <h2>Use a disposable cup</h2>
                 <p class="hidden-content">Using a disposable cup creates waste and has a negative impact on the
@@ -55,8 +54,113 @@
         </a>
     </div>
 
+    <div class="MAC-grid">
+        <a href="./choices/reusable-bag.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle reusable-bag-bg">
+                </div>
+                <h2>Bring reusable bag to the shops</h2>
+                <p class="hidden-content">hey</p>
+            </div>
+        </a>
+
+        <a href="./choices/plastic-bag.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle plastic-bag-bg">
+                </div>
+                <h2>Buy a plastic bag there</h2>
+                <p class="hidden-content">there</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="MAC-grid">
+        <a href="./choices/drive-transport.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle drive-transport-bg">
+                </div>
+                <h2>Drive to location</h2>
+                <p class="hidden-content">hey</p>
+            </div>
+        </a>
+
+        <a href="./choices/public-transport.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle public-transport-bg">
+                </div>
+                <h2>Use public transport</h2>
+                <p class="hidden-content">there</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="MAC-grid">
+        <a href="./choices/compost-food.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle compost-food-bg">
+                </div>
+                <h2>Compost food waste</h2>
+                <p class="hidden-content">hey</p>
+            </div>
+        </a>
+
+        <a href="./choices/waste-food.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle waste-food-bg">
+                </div>
+                <h2>Throw food waste in the bin</h2>
+                <p class="hidden-content">there</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="MAC-grid">
+        <a href="./choices/line-dry-clothes.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle line-dry-clothes-bg">
+                </div>
+                <h2>Dry your clothes on the line</h2>
+                <p class="hidden-content">hey</p>
+            </div>
+        </a>
+
+        <a href="./choices/dryer-clothes.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle dryer-clothes-bg">
+                </div>
+                <h2>Use a dryer</h2>
+                <p class="hidden-content">there</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="MAC-grid">
+        <a href="./choices/high-clothes.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle high-clothes-bg">
+                </div>
+                <h2>Shop high quality fashion at higher price</h2>
+                <p class="hidden-content">hey</p>
+            </div>
+        </a>
+
+        <a href="./choices/low-clothes.html" class="MAC-item">
+            <div class="MAC-box">
+                <div class="item-circle low-clothes-bg">
+                </div>
+                <h2>Shop low quality fashion at a lower cost</h2>
+                <p class="hidden-content">there</p>
+            </div>
+        </a>
+    </div>
+
 
     <script src="js/main.js"></script>
+
+    <script>
+        var random = Math.floor(Math.random() * jQuery('.MAC-grid').length);
+        jQuery('.MAC-grid').hide().eq(random).show();
+    </script>
 </body>
 
 </html>

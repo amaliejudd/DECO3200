@@ -2,7 +2,17 @@
   font-family: 'Syne Tactile', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h1,
+h2 {
+  font-family: 'Anton', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+  font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 a {
+  font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   cursor: pointer;
   text-decoration: none;
   color: unset;
@@ -12,17 +22,67 @@ div {
   box-sizing: border-box;
 }
 
-/* INDEX */
+/* INDEX STYLES*/
 
-.button {
+.a-button {
   padding: 12px;
-  border: 1px solid burlywood;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000000;
   transition: all 0.05s ease-in-out;
 }
 
-.button:hover {
-  background-color: crimson;
+.a-button:hover {
+  background-color: #222;
+  color: #fff;
 }
+
+.blog-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.blog-bg>svg {
+  width: 400px;
+}
+
+.index-container {
+  display: grid;
+  justify-items: center;
+  padding-top: 30vh;
+}
+
+.shadow {
+  color: white;
+  text-shadow: 1px 1px #000,
+    2px 2px #000,
+    3px 3px #000;
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition: all 0.12s ease-out;
+  -ms-transition: all 0.12s ease-out;
+  -o-transition: all 0.12s ease-out;
+}
+
+.shadow:hover {
+  position: relative;
+
+
+  text-shadow: 1px 1px #000000,
+    2px 2px #000000,
+    3px 3px #000000,
+    4px 4px #000000,
+    5px 5px #000000,
+    6px 6px #000000;
+}
+
+
 
 /* MAKE A CHOICE STYLES */
 
@@ -44,14 +104,20 @@ div {
   justify-items: center;
   height: 100%;
   padding: 25px;
-  background-color: #fae;
+  background-color: #000;
   transition: all .15s ease-in-out;
   border-radius: 10px;
-  width: 350px;
+  width: 400px;
+  z-index: 2;
 }
 
 .MAC-box h2 {
   font-size: 40px;
+  color: white;
+}
+
+.MAC-box p {
+  color: white;
 }
 
 .item-circle {
@@ -72,25 +138,82 @@ div {
   background-size: contain;
 }
 
+.reusable-bag-bg {
+  background-image: url('../img/reusable-bag.jpg');
+  background-size: contain;
+}
+
+.plastic-bag-bg {
+  background-image: url('../img/plastic-bag.jpg');
+  background-size: contain;
+}
+
+.drive-transport-bg {
+  background-image: url('../img/drive-transport.jpg');
+  background-size: contain;
+}
+
+.public-transport-bg {
+  background-image: url('../img/public-transport.jpg');
+  background-size: contain;
+}
+
+.compost-food-bg {
+  background-image: url('../img/compost-food.jpg');
+  background-size: contain;
+}
+
+.waste-food-bg {
+  background-image: url('../img/waste-food.jpg');
+  background-size: contain;
+}
+
+.line-dry-clothes-bg {
+  background-image: url('../img/line-dry-clothes.jpg');
+  background-size: contain;
+}
+
+.dryer-clothes-bg {
+  background-image: url('../img/dryer-clothes.jpg');
+  background-size: contain;
+}
+
+.high-clothes-bg {
+  background-image: url('../img/high-clothes.jpg');
+  background-size: contain;
+}
+
+.low-clothes-bg {
+  background-image: url('../img/low-clothes.jpg');
+  background-size: contain;
+}
+
+
+
+
+
 .hidden-content {
   opacity: 0;
   transition: opacity .15s ease-in-out;
 }
 
-.MAC-keep-cup:hover .hidden-content {
+.MAC-item:hover .hidden-content {
   opacity: 1;
 }
 
-.MAC-keep-cup:hover .MAC-box {
+.MAC-item:hover .MAC-box {
   transform: scale(1.05)
 }
 
-.MAC-disposable-cup:hover .hidden-content {
-  opacity: 1;
+
+/* Resources */
+
+.resources-container {
+  background-color: black;
 }
 
-.MAC-disposable-cup:hover .MAC-box {
-  transform: scale(1.05)
+#myCarousel {
+  width: 60%;
 }
 
 
@@ -115,8 +238,15 @@ div {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  z-index: -100;
+  z-index: 1;
   background-color: black;
+}
+
+.unmute {
+  color: white;
+  text-align: center;
+  z-index: 100;
+  font-size: 24px;
 }
 
 .center {
@@ -140,3 +270,9 @@ div {
 .fade-out {
   opacity: 0;
 }
+
+.mw60 {
+  max-width: 60%;
+}
+
+/*  */
