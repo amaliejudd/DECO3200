@@ -78,7 +78,6 @@ a {
 .shadow:hover {
   position: relative;
 
-
   text-shadow: 1px 1px #36B37E,
     2px 2px #36B37E,
     3px 3px #36B37E,
@@ -121,7 +120,7 @@ a {
   border-radius: 10px;
   width: 600px;
   z-index: 2;
-
+  text-align: center;
 }
 
 .MAC-box h2 {
@@ -218,9 +217,9 @@ a {
 
 .MAC-item:hover .MAC-box {
   transform: scale(1.05);
-  box-shadow: 1px 1px #36B37E,
-    2px 2px #36B37E,
-    3px 3px #36B37E;
+  box-shadow: 1px 1px #fff,
+    2px 2px #fff,
+    3px 3px #fff;
   transition: all 0.12s ease-out;
   -webkit-transition: all 0.12s ease-out;
   -moz-transition: all 0.12s ease-out;
