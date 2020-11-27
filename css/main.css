@@ -4,7 +4,11 @@
 
 h1,
 h2 {
-  font-family: 'Anton', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Anton', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+h3 {
+  font-family: 'Anton', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
 p {
@@ -16,10 +20,25 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: unset;
+  Text-decoration: none !important;
 }
 
 div {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+  color: #fff;
+
+}
+
+a {
+  font-size: 2em;
 }
 
 /* INDEX STYLES*/
@@ -30,27 +49,12 @@ div {
   color: #000;
   border: 1px solid #000000;
   transition: all 0.05s ease-in-out;
+  border-radius: 8px;
 }
 
 .a-button:hover {
-  background-color: #222;
+  background-color: #36B37E;
   color: #fff;
-}
-
-.blog-bg {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  z-index: -1;
-}
-
-.blog-bg>svg {
-  width: 400px;
 }
 
 .index-container {
@@ -61,9 +65,10 @@ div {
 
 .shadow {
   color: white;
-  text-shadow: 1px 1px #000,
-    2px 2px #000,
-    3px 3px #000;
+  text-shadow: 1px 1px #36B37E,
+    2px 2px #36B37E,
+    3px 3px #36B37E;
+  transition: all 0.12s ease-out;
   -webkit-transition: all 0.12s ease-out;
   -moz-transition: all 0.12s ease-out;
   -ms-transition: all 0.12s ease-out;
@@ -74,12 +79,12 @@ div {
   position: relative;
 
 
-  text-shadow: 1px 1px #000000,
-    2px 2px #000000,
-    3px 3px #000000,
-    4px 4px #000000,
-    5px 5px #000000,
-    6px 6px #000000;
+  text-shadow: 1px 1px #36B37E,
+    2px 2px #36B37E,
+    3px 3px #36B37E,
+    4px 4px #36B37E,
+    5px 5px #36B37E,
+    6px 6px #36B37E;
 }
 
 
@@ -88,27 +93,35 @@ div {
 
 .MAC-container {
   height: 100vh;
+  background-color: black;
+}
+
+.MAC-header {
+  color: white;
+  text-align: center;
 }
 
 .MAC-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10%;
-  padding: 100px;
+  padding: 50px;
   height: 100%;
   justify-items: center;
+  box-sizing: border-box;
 }
 
 .MAC-box {
   display: grid;
   justify-items: center;
-  height: 100%;
+  height: 80%;
   padding: 25px;
-  background-color: #000;
+  background-color: #36B37E;
   transition: all .15s ease-in-out;
   border-radius: 10px;
-  width: 400px;
+  width: 600px;
   z-index: 2;
+
 }
 
 .MAC-box h2 {
@@ -118,11 +131,16 @@ div {
 
 .MAC-box p {
   color: white;
+
+}
+
+.smaller-font {
+  font-size: 0.75em;
 }
 
 .item-circle {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
   background-color: white;
   z-index: 2;
@@ -188,13 +206,10 @@ div {
   background-size: contain;
 }
 
-
-
-
-
 .hidden-content {
   opacity: 0;
   transition: opacity .15s ease-in-out;
+  text-align: center;
 }
 
 .MAC-item:hover .hidden-content {
@@ -202,7 +217,32 @@ div {
 }
 
 .MAC-item:hover .MAC-box {
-  transform: scale(1.05)
+  transform: scale(1.05);
+  box-shadow: 1px 1px #36B37E,
+    2px 2px #36B37E,
+    3px 3px #36B37E;
+  transition: all 0.12s ease-out;
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition: all 0.12s ease-out;
+  -ms-transition: all 0.12s ease-out;
+  -o-transition: all 0.12s ease-out;
+
+}
+
+.a-button-choice {
+  padding: 10px;
+  margin-top: 200px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  transition: all 0.05s ease-in-out;
+  border-radius: 8px;
+}
+
+.a-button-choice:hover {
+  background-color: #36B37E;
+  color: #fff;
+  border: 1px solid #36B37E;
 }
 
 
@@ -216,11 +256,17 @@ div {
   width: 60%;
 }
 
+.carousel-caption {
+  top: 50px;
+  bottom: 10px;
+}
+
 
 /* Helpers */
 
 .ta-center {
   text-align: center;
+  padding-top: 50px;
 }
 
 .video {
@@ -247,6 +293,10 @@ div {
   text-align: center;
   z-index: 100;
   font-size: 24px;
+}
+
+.white {
+  color: white;
 }
 
 .center {
