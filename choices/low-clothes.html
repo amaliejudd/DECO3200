@@ -35,6 +35,17 @@
         <div class="item-circle low-clothes-bg" id="fade-out">
         </div>
 
+        <input type="button" value="Open Curtain" onclick="return change(this);" />
+
+        <script type="text/javascript">
+            function change(el) {
+                if (el.value === "Open Curtain")
+                    el.value = "Close Curtain";
+                else
+                    el.value = "Open Curtain";
+            }
+        </script>
+
         <div class="MAC-box hidden-content" id="hidden">
             <div class="item-circle low-clothes-bg">
             </div>

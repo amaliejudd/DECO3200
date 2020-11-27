@@ -23,11 +23,3 @@ function showElement() {
     var elementToHide = document.getElementById("fade-out")
     elementToHide.classList.add("fade-out")
 }
-
-var vid = documemt.getElementById("video");
-
-vid.addEventlistener('timeupdate', videoTimeUpdate, false);
-
-function videoTimeUpdate(e) {
-    vid.setAttribute("controls", "controls");
-}
