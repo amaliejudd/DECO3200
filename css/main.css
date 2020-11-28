@@ -138,8 +138,8 @@ a {
 }
 
 .item-circle {
-  height: 50px;
-  width: 50px;
+  height: 200px;
+  width: 200px;
   border-radius: 100%;
   background-color: white;
   z-index: 2;
@@ -156,12 +156,12 @@ a {
 }
 
 .reusable-bag-bg {
-  background-image: url('../img/reusable-bag.jpg');
+  background-image: url('../img/reusable-bag.png');
   background-size: contain;
 }
 
 .plastic-bag-bg {
-  background-image: url('../img/plastic-bag.jpg');
+  background-image: url('../img/plastic-bag.png');
   background-size: contain;
 }
 
@@ -176,12 +176,12 @@ a {
 }
 
 .compost-food-bg {
-  background-image: url('../img/compost-food.jpg');
+  background-image: url('../img/compost-food.png');
   background-size: contain;
 }
 
 .waste-food-bg {
-  background-image: url('../img/waste-food.jpg');
+  background-image: url('../img/waste-food.png');
   background-size: contain;
 }
 
