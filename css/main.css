@@ -138,8 +138,8 @@ a {
 }
 
 .item-circle {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
   background-color: white;
   z-index: 2;
@@ -166,12 +166,12 @@ a {
 }
 
 .drive-transport-bg {
-  background-image: url('../img/drive-transport.jpg');
+  background-image: url('../img/drive-transport.png');
   background-size: contain;
 }
 
 .public-transport-bg {
-  background-image: url('../img/public-transport.jpg');
+  background-image: url('../img/public-transport.png');
   background-size: contain;
 }
 
@@ -186,12 +186,12 @@ a {
 }
 
 .line-dry-clothes-bg {
-  background-image: url('../img/line-dry-clothes.jpg');
+  background-image: url('../img/line-dry-clothes.png');
   background-size: contain;
 }
 
 .dryer-clothes-bg {
-  background-image: url('../img/dryer-clothes.jpg');
+  background-image: url('../img/dryer-clothes.png');
   background-size: contain;
 }
 
